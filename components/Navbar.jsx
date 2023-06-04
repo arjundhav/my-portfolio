@@ -8,7 +8,7 @@ import {
     FaLinkedin,
     FaHackerrank
 } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/Si";
+import { SiLeetcode } from "react-icons/si";
 
 const Navbar = () => {
     const [navigation, setNavigation] = useState(false);

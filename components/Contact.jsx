@@ -3,7 +3,7 @@ import React from "react";
 
 import contactus from "../public/assets/contact-img.svg";
 import { FaGithub, FaLinkedin, FaHackerrank } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/Si";
+import { SiLeetcode } from "react-icons/si";
 import Link from "next/link";
 
 const Contact = () => {
