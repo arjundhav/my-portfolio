@@ -23,6 +23,6 @@
 
 .progressMainStyle {
   height: 5px;
-  background-color: #ff0000;
+  background-color: red;
   width: 15%;
 }

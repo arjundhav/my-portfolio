@@ -43,7 +43,7 @@ const Projects = () => {
 
   return (
     <div id="projects" className="w-full">
-      <div className="max-w-screen-xl mx-auto px-8 lg:py-16 md:py-16 sm:py-16 pt-44 text-center md:text-left">
+      <div className="max-w-screen-xl mx-auto px-8 py-16 lg:pt-16 md:pt-5 sm:pt-5 pt-12 text-center md:text-left">
         <h2 className="mb-5 text-5xl md:text-7xl tracking-wider uppercase text-blue-500 font-bold">
           projects
         </h2>

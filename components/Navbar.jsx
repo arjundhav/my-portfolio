@@ -48,7 +48,7 @@ const Navbar = () => {
 
     return (
         <div
-            className={`h-20 z-10 fixed text-black duration-700 ease-in-out ${pageScroll ? 'w-3/4 mt-6 lg:ml-48 md:ml-28 sm:ml-20 ml-12 rounded-full bg-black text-white' : 'w-full bg-white'}`}
+            className={`lg:h-20 md:h-20 sm:h-15 h-15 z-10 fixed text-black duration-700 ease-in-out ${pageScroll ? 'w-3/4 mt-6 lg:ml-48 md:ml-28 sm:ml-20 ml-12 rounded-full bg-black text-white' : 'w-full bg-white'}`}
         >
             <span
                 style={{ transform: `translateX(${50 - 100}%)` }}
@@ -85,7 +85,7 @@ const Navbar = () => {
 
                     {!navigation && (
                         <div
-                            className="md:hidden cursor-pointer"
+                            className="md:hidden cursor-pointer mr-4"
                             onClick={() => setNavigation(true)}
                         >
                             <FaBars size={30} />
@@ -118,14 +118,14 @@ const Navbar = () => {
                                 duration={500}>
                                 <h2
                                     onClick={() => setNavigation(false)}
-                                    className="text-2xl md:text-3xl sm:text-3xl lg:text-4xl font-bold uppercase tracking-wider cursor-pointer"
+                                    className="text-2xl md:text-3xl sm:text-3xl lg:text-4xl font-bold duration-200 uppercase ease-in-out tracking-wider cursor-pointer hover:scale-125"
                                 >
                                     balaji
                                 </h2>
                             </Link>
                             <div
                                 onClick={() => setNavigation(false)}
-                                className="p-3 cursor-pointer"
+                                className="p-3 cursor-pointer mr-3 hover:text-red-700 ease-in-out duration-200 hover:scale-125"
                             >
                                 <FaTimes size={30} />
                             </div>
@@ -155,18 +155,18 @@ const Navbar = () => {
 
                         <div>
                             <div className="grid grid-cols-2 mx-auto w-4/5 gap-10">
-                                <Link href="https://www.linkedin.com/in/balaji-mehtre" className="flex items-center justify-center rounded-full shadow-md shadow-white p-3 cursor-pointer">
-                                    <FaLinkedin size={25} />
-                                </Link>
-                                <Link href="https://github.com/balajimehtre3" className="flex items-center justify-center rounded-full shadow-md shadow-white p-3 cursor-pointer">
+                                <a href="https://www.linkedin.com/in/balaji-mehtre" target="_blank" className="flex hover:text-black items-center justify-center rounded-full shadow-md shadow-white hover:scale-105 duration-400 p-3 cursor-pointer">
+                                    <FaLinkedin size={25} className=""/>
+                                </a>
+                                <a href="https://github.com/balajimehtre3" target="_blank" className="flex hover:text-black items-center justify-center rounded-full shadow-md shadow-white hover:scale-105 duration-400 p-3 cursor-pointer">
                                     <FaGithub size={25} />
-                                </Link>
-                                <Link href="https://www.hackerrank.com/balaji3mehtre" className="flex items-center justify-center rounded-full shadow-md shadow-white p-3 cursor-pointer">
+                                </a>
+                                <a href="https://www.hackerrank.com/balaji3mehtre" target="_blank" className="flex hover:text-black items-center justify-center rounded-full shadow-md shadow-white hover:scale-105 duration-400 p-3 cursor-pointer">
                                     <FaHackerrank size={25} />
-                                </Link>
-                                <Link href="https://leetcode.com/balajimehtre3" className="flex items-center justify-center rounded-full shadow-md shadow-white p-3 cursor-pointer">
+                                </a>
+                                <a href="https://leetcode.com/balajimehtre3" target="_blank" className="flex hover:text-black items-center justify-center rounded-full shadow-md shadow-white hover:scale-105 duration-400 p-3 cursor-pointer">
                                     <SiLeetcode size={25} />
-                                </Link>
+                                </a>
                             </div>
                         </div>
                     </div>
