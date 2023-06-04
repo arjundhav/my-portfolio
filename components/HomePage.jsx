@@ -61,7 +61,7 @@ function HomePage() {
         <p className='text-gray-600 lg:text-xl md:text-xl sm:text-xl text-base max-w-2xl tracking-wider mx-auto mt-3'>
           I am an enthusiastic and self-motivated individual with a passion for full stack development. With a strong foundation in Full Stack Development, I possess the ability to translate complex business requirements into effective technical solutions. My proficiency in technologies like Next JS, React JS, Spring Boot, Hibernate, and MySQL allows me to create intuitive and efficient web applications. I am a quick learner, an excellent team player, and have experience working on projects involving HTML5, CSS3, JavaScript, Servlet, JSP, and GitHub.
         </p>
-        <Link href="https://drive.google.com/file/d/12Et3pcvJfTXuuPhhNuzXeGuUlvPq_pYT/view?usp=sharing" download={true}>
+        <Link href="https://drive.google.com/file/d/12CTvIzTfuaUKIsbfQKjYl7PVN_IPcSJR/view?usp=sharing" target='_blank' download={true}>
           <div className='group flex items-center justify-center my-8 bg-blue-500
           text-white px-6 py-3 font-bold uppercase rounded-md tracking-wider transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300'>
             Resume
