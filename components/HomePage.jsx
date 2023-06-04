@@ -54,7 +54,7 @@ function HomePage() {
           {`Hi! I'm Balaji `}
           <span className="txt-rotate">
             <span className="wrap text-orange-500">
-              {text}<span className="font-bold lg:text-5xl md:text-4xl sm:text-4xl text-3xl blinking-cursor">|</span>
+              {text}<span className="font-bold lg:text-4xl md:text-4xl sm:text-4xl text-3xl blinking-cursor">|</span>
             </span>
           </span>
         </h1>
