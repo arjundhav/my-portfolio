@@ -17,7 +17,14 @@ const StarsComponent = () => {
         const stars = starsRef.current;
         const starsCtx = stars.getContext('2d');
         let screen, starsElements;
-        const starsParams = { speed: 3, number: 600, extinction: 4 };
+        let starsNumber = 2000; // Default number of stars for laptop screen
+
+        if (window.innerWidth <= 768) {
+            // Adjust the number of stars for mobile screen
+            starsNumber = 300;
+        }
+
+        const starsParams = { speed: 3, number: starsNumber, extinction: 4 };
 
         function Star() {
             this.x = Math.random() * stars.width;
@@ -40,7 +47,7 @@ const StarsComponent = () => {
                 rad = stars.width / this.z;
                 opacity = rad > starsParams.extinction ? 1.5 * (2 - rad / starsParams.extinction) : 1;
 
-                const starColor = getStarColor(scrollTop); // Get the star color based on the scroll position
+                const starColor = 'red'; // Set the star color to red
 
                 starsCtx.beginPath();
                 starsCtx.fillStyle = starColor;
@@ -93,20 +100,7 @@ const StarsComponent = () => {
         return () => {
             window.removeEventListener('scroll', onScroll);
         };
-    }, [scrollTop]);
-
-    const getStarColor = (scrollPosition) => {
-        // Define the color transitions based on scroll position
-        if (scrollPosition < 25) {
-            return 'red';
-        } else if (scrollPosition < 50) {
-            return 'blue';
-        } else if (scrollPosition < 75) {
-            return 'white';
-        } else {
-            return 'yellow';
-        }
-    };
+    }, []);
 
     return typeof window !== 'undefined' ? (
         <div className="stars-container">
@@ -134,4 +128,3 @@ const StarsComponent = () => {
 };
 
 export default StarsComponent;
-
