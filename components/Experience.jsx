@@ -13,6 +13,7 @@ import ms from "../public/assets/experience/ms.png";
 import b from "../public/assets/experience/b.png";
 import tailwind from "../public/assets/experience/tailwind.png";
 import gitHub from "../public/assets/experience/github.png";
+import mongo from "../public/assets/experience/mongo.jpeg";
 
 import Image from "next/image";
 
@@ -82,6 +83,11 @@ const Experience = () => {
       id: 13,
       title: "Github",
       src: gitHub,
+    },
+    {
+      id: 14,
+      title: "Mongo DB",
+      src: mongo,
     }
   ];
 
@@ -99,7 +105,7 @@ const Experience = () => {
               odd:shadow-rose-400 even:shadow-blue-400"
             >
               <Image src={src} width={64} height={64} alt={title} />
-              <h3 className="font-light">{title}</h3>
+              <h3 className="font-light text-white">{title}</h3>
             </div>
           ))}
         </div>

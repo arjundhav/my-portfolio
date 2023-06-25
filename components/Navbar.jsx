@@ -48,7 +48,7 @@ const Navbar = () => {
 
     return (
         <div
-            className={`lg:h-20 md:h-20 sm:h-15 h-15 z-10 fixed text-black duration-700 ease-in-out ${pageScroll ? 'w-3/4 mt-6 lg:ml-48 md:ml-28 sm:ml-20 ml-12 rounded-full bg-black text-white' : 'w-full bg-white'}`}
+            className={`lg:h-20 md:h-20 sm:h-15 h-15 z-10 fixed  duration-700 ease-in-out ${pageScroll ? 'w-3/4 mt-6 lg:ml-48 md:ml-28 sm:ml-20 ml-12 rounded-full bg-black/70 backdrop-blur text-white border-4 border-indigo-800' : 'w-full bg-transparent text-white'}`}
         >
             <span
                 style={{ transform: `translateX(${50 - 100}%)` }}
