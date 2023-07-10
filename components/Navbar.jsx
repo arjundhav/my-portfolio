@@ -16,7 +16,7 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            setPageScroll(window.scrollY >= 120);
+            setPageScroll(window.scrollY >= 90);
         };
 
         window.addEventListener("scroll", handleScroll);
@@ -48,12 +48,12 @@ const Navbar = () => {
 
     return (
         <div
-            className={`lg:h-20 md:h-20 sm:h-15 h-15 z-10 fixed  duration-700 ease-in-out ${pageScroll ? 'w-3/4 mt-6 lg:ml-48 md:ml-28 sm:ml-20 ml-12 rounded-full bg-black/70 backdrop-blur text-white border-4 border-indigo-800' : 'w-full bg-transparent text-white'}`}
+            className={`lg:h-20 md:h-20 sm:h-15 h-15 z-9 fixed  duration-700 ease-in-out ${pageScroll ? 'w-3/4 mt-6 lg:ml-48 md:ml-28 sm:ml-20 ml-12 rounded-full backdrop-blur shadow-lg text-white bg-black/60 shadow-blue-400' : 'w-full bg-transparent text-white'}`}
         >
-            <span
+            {/* <span
                 style={{ transform: `translateX(${50 - 100}%)` }}
                 className={'relative bg-yellow-400 h-1 z-20 top-0'}
-            />
+            /> */}
             <div className="flex justify-between items-center w-full h-full max-w-screen-xl mx-auto p-4">
                 <Link to="home"
                     activeClass="active"
@@ -97,7 +97,7 @@ const Navbar = () => {
             <div
                 className={
                     navigation
-                        ? "md:hidden fixed left-0 top-0 w-full h-full bg-black/70 backdrop-blur"
+                        ? "md:hidden fixed left-0 top-0 w-full h-full bg-black/70 backdrop-blur z-20"
                         : ""
                 }
             >
@@ -105,7 +105,7 @@ const Navbar = () => {
                     className={
                         navigation
                             ? "fixed left-0 top-0 w-4/5 h-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white p-10 ease-in duration-500"
-                            : "fixed top-0 left-[-100%] p-10 h-full ease-in duration-500"
+                            : "fixed top-0 left-[-100%] z-30 p-10 h-full ease-in duration-500"
                     }
                 >
                     <div>
@@ -177,3 +177,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
