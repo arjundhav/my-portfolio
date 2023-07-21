@@ -14,6 +14,7 @@ const Navbar = () => {
     const [navigation, setNavigation] = useState(false);
     const [pageScroll, setPageScroll] = useState(false);
 
+
     useEffect(() => {
         const handleScroll = () => {
             setPageScroll(window.scrollY >= 90);
@@ -47,50 +48,51 @@ const Navbar = () => {
 
 
     return (
-        <div
-            className={`lg:h-20 md:h-20 sm:h-15 h-15 z-9 fixed  duration-700 ease-in-out ${pageScroll ? 'w-3/4 mt-6 lg:ml-48 md:ml-28 sm:ml-20 ml-12 rounded-full backdrop-blur shadow-lg text-white bg-black/60 shadow-blue-400' : 'w-full bg-transparent text-white'}`}
-        >
-            {/* <span
+        <>
+            <div
+                className={`lg:h-20 md:h-20 sm:h-15 h-15 z-9 fixed  duration-700 ease-in-out ${pageScroll ? 'w-3/4 mt-6 lg:ml-48 md:ml-28 sm:ml-20 ml-12 rounded-full backdrop-blur shadow-lg text-white bg-black/60 shadow-blue-400' : 'w-full bg-transparent text-white'}`}
+            >
+                {/* <span
                 style={{ transform: `translateX(${50 - 100}%)` }}
                 className={'relative bg-yellow-400 h-1 z-20 top-0'}
             /> */}
-            <div className="flex justify-between items-center w-full h-full max-w-screen-xl mx-auto p-4">
-                <Link to="home"
-                    activeClass="active"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}>
-                    <h1 className={`text-2xl md:text-3xl sm:text-3xl lg:text-4xl cursor-pointer font-bold uppercase duration-200 ease-in-out hover:scale-105 tracking-wider cursor-pointern ${pageScroll && 'ml-7 md:ml-4'}`}>
-                        balaji
-                    </h1>
-                </Link>
+                <div className="flex justify-between items-center w-full h-full max-w-screen-xl mx-auto p-4">
+                    <Link to="home"
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}>
+                        <h1 className={`text-2xl md:text-3xl sm:text-3xl lg:text-4xl cursor-pointer font-bold uppercase duration-200 ease-in-out hover:scale-105 tracking-wider cursor-pointern ${pageScroll && 'ml-7 md:ml-4'}`}>
+                            balaji
+                        </h1>
+                    </Link>
 
-                <div>
-                    <ul className="hidden md:flex">
-                        {links.map(({ id, link }) => (
-                            <li key={id} className={`ml-10 cursor-pointer uppercase duration-200 ease-in-out hover:scale-125 active:scale-125 hover:text-blue-500 active:text-blue-500 tracking-wider ${pageScroll ? 'text-sm md:mr-3 mr-7' : 'text-lg'}`}>
-                                <Link key={id}
-                                    activeClass="active"
-                                    to={link}
-                                    spy={true}
-                                    smooth={true}
-                                    offset={-70}
-                                    duration={500}>
-                                    {link}
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
+                    <div>
+                        <ul className="hidden md:flex">
+                            {links.map(({ id, link }) => (
+                                <li key={id} className={`ml-10 cursor-pointer uppercase duration-200 ease-in-out hover:scale-125 active:scale-125 hover:text-blue-500 active:text-blue-500 tracking-wider ${pageScroll ? 'text-sm md:mr-3 mr-7' : 'text-lg'}`}>
+                                    <Link key={id}
+                                        activeClass="active"
+                                        to={link}
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-70}
+                                        duration={500}>
+                                        {link}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
 
-                    {!navigation && (
-                        <div
-                            className="md:hidden cursor-pointer mr-4"
-                            onClick={() => setNavigation(true)}
-                        >
-                            <FaBars size={30} />
-                        </div>
-                    )}
+                        {!navigation && (
+                            <div
+                                className="md:hidden cursor-pointer mr-4"
+                                onClick={() => setNavigation(true)}
+                            >
+                                <FaBars size={30} />
+                            </div>)}
+                    </div>
                 </div>
             </div>
 
@@ -104,8 +106,8 @@ const Navbar = () => {
                 <div
                     className={
                         navigation
-                            ? "fixed left-0 top-0 w-4/5 h-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white p-10 ease-in duration-500"
-                            : "fixed top-0 left-[-100%] z-30 p-10 h-full ease-in duration-500"
+                            ? "fixed left-0 top-0 w-full h-full bg-transparent text-white p-10 ease-in-out duration-500"
+                            : "fixed top-0 left-[-100%] z-30 p-10 h-full ease-linear duration-1000"
                     }
                 >
                     <div>
@@ -118,7 +120,7 @@ const Navbar = () => {
                                 duration={500}>
                                 <h2
                                     onClick={() => setNavigation(false)}
-                                    className="text-2xl md:text-3xl sm:text-3xl lg:text-4xl font-bold duration-200 uppercase ease-in-out tracking-wider cursor-pointer hover:scale-125"
+                                    className="text-2xl md:text-3xl sm:text-3xl lg:text-4xl font-bold duration-200 uppercase ease-in-out tracking-wider cursor-pointer hover:scale-95"
                                 >
                                     balaji
                                 </h2>
@@ -145,9 +147,9 @@ const Navbar = () => {
                                 >
                                     <li
                                         onClick={() => setNavigation(false)}
-                                        className="py-4 text-2xl tracking-wider cursor-pointer duration-200 ease-in-out hover:scale-105"
+                                        className="py-4 flex justify-center text-2xl tracking-wider"
                                     >
-                                        {link}
+                                        <span className="hover:border-b-2 cursor-pointer duration-300 ease-in-out">{link}</span>
                                     </li>
                                 </Link>
                             ))}
@@ -155,16 +157,16 @@ const Navbar = () => {
 
                         <div>
                             <div className="grid grid-cols-2 mx-auto w-4/5 gap-10">
-                                <a href="https://www.linkedin.com/in/balaji-mehtre" target="_blank" className="flex hover:text-black items-center justify-center rounded-full shadow-md shadow-white hover:scale-105 duration-400 p-3 cursor-pointer">
-                                    <FaLinkedin size={25} className=""/>
+                                <a href="https://www.linkedin.com/in/balaji-mehtre" target="_blank" className="flex hover:text-blue-500 items-center justify-center rounded-full shadow-md shadow-white hover:scale-105 duration-400 p-3 cursor-pointer">
+                                    <FaLinkedin size={25} className="" />
                                 </a>
-                                <a href="https://github.com/balajimehtre3" target="_blank" className="flex hover:text-black items-center justify-center rounded-full shadow-md shadow-white hover:scale-105 duration-400 p-3 cursor-pointer">
+                                <a href="https://github.com/balajimehtre3" target="_blank" className="flex hover:text-gray-500 items-center justify-center rounded-full shadow-md shadow-white hover:scale-105 duration-400 p-3 cursor-pointer">
                                     <FaGithub size={25} />
                                 </a>
-                                <a href="https://www.hackerrank.com/balaji3mehtre" target="_blank" className="flex hover:text-black items-center justify-center rounded-full shadow-md shadow-white hover:scale-105 duration-400 p-3 cursor-pointer">
+                                <a href="https://www.hackerrank.com/balaji3mehtre" target="_blank" className="flex hover:text-green-500 items-center justify-center rounded-full shadow-md shadow-white hover:scale-105 duration-400 p-3 cursor-pointer">
                                     <FaHackerrank size={25} />
                                 </a>
-                                <a href="https://leetcode.com/balajimehtre3" target="_blank" className="flex hover:text-black items-center justify-center rounded-full shadow-md shadow-white hover:scale-105 duration-400 p-3 cursor-pointer">
+                                <a href="https://leetcode.com/balajimehtre3" target="_blank" className="flex hover:text-orange-500 items-center justify-center rounded-full shadow-md shadow-white hover:scale-105 duration-400 p-3 cursor-pointer">
                                     <SiLeetcode size={25} />
                                 </a>
                             </div>
@@ -172,7 +174,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 

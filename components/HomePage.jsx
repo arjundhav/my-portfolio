@@ -63,7 +63,7 @@ function HomePage() {
         </p>
         <Link href="https://drive.google.com/file/d/12CTvIzTfuaUKIsbfQKjYl7PVN_IPcSJR/view?usp=sharing" target='_blank' download={true}>
           <div className='group flex items-center justify-center my-8 bg-blue-500
-          text-white px-6 py-3 font-bold uppercase rounded-md tracking-wider transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300'>
+          text-white px-6 py-3 font-bold uppercase rounded-md tracking-wider transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 '>
             Resume
             <span className='-rotate-90 duration-100 ease-in group-hover:translate-x-5'>
               <MdExpandMore size={25} />

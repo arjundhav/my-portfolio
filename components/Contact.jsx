@@ -24,25 +24,25 @@ const Contact = () => {
             <div className="grid grid-cols-2 mx-auto w-4/5 gap-10">
               <Link
                 href="https://www.linkedin.com/in/balaji-mehtre" target="_blank"
-                className="flex hover:text-blue-700 items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer"
+                className="flex hover:text-blue-500 items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer"
               >
                 <FaLinkedin size={25} />
               </Link>
               <Link
                 href="https://github.com/balajimehtre3"
-                className="flex hover:text-blue-700 items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer"
+                className="flex hover:text-gray-500 items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer"
               >
                 <FaGithub size={25} />
               </Link>
               <Link
                 href="https://www.hackerrank.com/balaji3mehtre"
-                className="flex hover:text-blue-700 items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer"
+                className="flex hover:text-green-500 items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer"
               >
                 <FaHackerrank size={25} />
               </Link>
               <Link
                 href="https://leetcode.com/balajimehtre3"
-                className="flex hover:text-blue-700 items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer"
+                className="flex hover:text-orange-500 items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer"
               >
                 <SiLeetcode size={25} />
               </Link>
