@@ -99,7 +99,7 @@ const Navbar = () => {
             <div
                 className={
                     navigation
-                        ? "md:hidden fixed left-0 top-0 w-full h-full bg-black/70 backdrop-blur z-20"
+                        ? "md:hidden fixed left-0 top-0 w-full h-full bg-black/70 backdrop-blur z-20 ease-in-out duration-500"
                         : ""
                 }
             >
@@ -107,7 +107,7 @@ const Navbar = () => {
                     className={
                         navigation
                             ? "fixed left-0 top-0 w-full h-full bg-transparent text-white p-10 ease-in-out duration-500"
-                            : "fixed top-0 left-[-100%] z-30 p-10 h-full ease-linear duration-1000"
+                            : "fixed top-0 left-[-100%] z-30 p-10 h-full ease-in-out duration-500"
                     }
                 >
                     <div>
@@ -120,7 +120,7 @@ const Navbar = () => {
                                 duration={500}>
                                 <h2
                                     onClick={() => setNavigation(false)}
-                                    className="text-2xl md:text-3xl sm:text-3xl lg:text-4xl font-bold duration-200 uppercase ease-in-out tracking-wider cursor-pointer hover:scale-95"
+                                    className="text-2xl md:text-3xl sm:text-3xl lg:text-4xl font-bold duration-300 uppercase ease-in-out tracking-wider cursor-pointer hover:scale-95"
                                 >
                                     balaji
                                 </h2>
