@@ -64,7 +64,7 @@ const Navbar = () => {
                         offset={-70}
                         duration={500}>
                         <h1 className={`text-2xl md:text-3xl sm:text-3xl lg:text-4xl cursor-pointer font-bold uppercase duration-200 ease-in-out hover:scale-105 tracking-wider cursor-pointern ${pageScroll && 'ml-7 md:ml-4'}`}>
-                            balaji
+                            arjun
                         </h1>
                     </Link>
 
@@ -122,7 +122,7 @@ const Navbar = () => {
                                     onClick={() => setNavigation(false)}
                                     className="text-2xl md:text-3xl sm:text-3xl lg:text-4xl font-bold duration-300 uppercase ease-in-out tracking-wider cursor-pointer hover:scale-95"
                                 >
-                                    balaji
+                                    arjun
                                 </h2>
                             </Link>
                             <div
