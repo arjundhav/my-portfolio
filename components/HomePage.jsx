@@ -52,6 +52,8 @@ function HomePage() {
     justify-around items-center'>
         <h1 className='font-bold text-white lg:text-5xl md:text-5xl sm:text-4xl text-3xl'>
           {`Hi! I'm Arjun `}
+        </h1>
+        <h1 className='font-bold text-white lg:text-5xl md:text-5xl sm:text-4xl text-3xl'>
           <span className="txt-rotate">
             <span className="wrap text-orange-500">
               {text}<span className="font-bold lg:text-5xl md:text-4xl sm:text-4xl text-3xl blinking-cursor">|</span>
