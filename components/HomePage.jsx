@@ -11,7 +11,7 @@ function HomePage() {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["Full Stack Developer. ", "FrontEnd Developer. ", "BackEnd Developer. ", "Java Developer.", "React.js Developer."];
+  const toRotate = [ "DevOps Engineer ", "Python Developer."];
   const period = 2000;
 
   useEffect(() => {
@@ -51,7 +51,7 @@ function HomePage() {
       <div className='max-w-3xl mx-auto w-full h-full px-8 py-16 pt-24 p-4 flex flex-col
     justify-around items-center'>
         <h1 className='font-bold text-white lg:text-5xl md:text-5xl sm:text-4xl text-3xl'>
-          {`Hi! I'm Balaji `}
+          {`Hi! I'm Arjun `}
           <span className="txt-rotate">
             <span className="wrap text-orange-500">
               {text}<span className="font-bold lg:text-5xl md:text-4xl sm:text-4xl text-3xl blinking-cursor">|</span>
@@ -59,7 +59,7 @@ function HomePage() {
           </span>
         </h1>
         <p className='text-gray-200 lg:text-xl md:text-xl sm:text-xl text-base max-w-2xl tracking-wider mx-auto mt-3'>
-          I am an enthusiastic and self-motivated individual with a passion for full stack development. With a strong foundation in Full Stack Development, I possess the ability to translate complex business requirements into effective technical solutions. My proficiency in technologies like Next JS, React JS, Spring Boot, Hibernate, and MySQL allows me to create intuitive and efficient web applications. I am a quick learner, an excellent team player, and have experience working on projects involving HTML5, CSS3, JavaScript, Servlet, JSP, and GitHub.
+          I am an enthusiastic and self-motivated individual with a passion for Cloud and DevOps. With a strong foundation in DevOps Tools and Technology, I possess the ability to translate complex business requirements into effective technical solutions. My proficiency in technologies like AWS services,CI/CD,Jenkins,Docker,Terraform,Ansible,Linux,Python,SDLC,GIT,Github and MySQL. I am a quick learner, an excellent team player, and have 2+ experience working on projects involving AWS and DevOps Tools.
         </p>
         <Link href="https://drive.google.com/file/d/12CTvIzTfuaUKIsbfQKjYl7PVN_IPcSJR/view?usp=sharing" target='_blank' download={true}>
           <div className='group flex items-center justify-center my-8 bg-blue-500
