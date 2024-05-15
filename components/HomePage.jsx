@@ -61,7 +61,8 @@ function HomePage() {
           </span>
         </h1>
         <p className='text-gray-200 lg:text-xl md:text-xl sm:text-xl text-base max-w-2xl tracking-wider mx-auto mt-3'>
-          I am an enthusiastic and self-motivated individual with a passion for Cloud and DevOps. With a strong foundation in DevOps Tools and Technology, I possess the ability to translate complex business requirements into effective technical solutions. My proficiency in technologies like AWS services,CI/CD,Jenkins,Docker,Terraform,Ansible,Linux,Python,SDLC,GIT,Github and MySQL. I am a quick learner, an excellent team player, and have 2+ experience working on projects involving AWS and DevOps Tools.
+          I am an enthusiastic and self-motivated individual with a passion for Cloud and DevOps. With a strong foundation in DevOps Tools and Technology, I possess the ability to translate complex business requirements into effective technical solutions. 
+          My proficiency in technologies like AWS services,CI/CD,Jenkins,Docker,Terraform,Ansible,Linux,Python,SDLC,GIT,Github and MySQL. I am a quick learner, an excellent team player, and have 2+ experience working on projects involving AWS and DevOps Tools.
         </p>
         <Link href="https://drive.google.com/file/d/1AmKKXgli1yHWxEsb59Nwfs9aIQCDSjVy/view?usp=sharing" target='_blank' download={true}>
           <div className='group flex items-center justify-center my-8 bg-blue-500
