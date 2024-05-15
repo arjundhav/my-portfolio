@@ -61,7 +61,7 @@ function HomePage() {
         <p className='text-gray-200 lg:text-xl md:text-xl sm:text-xl text-base max-w-2xl tracking-wider mx-auto mt-3'>
           I am an enthusiastic and self-motivated individual with a passion for Cloud and DevOps. With a strong foundation in DevOps Tools and Technology, I possess the ability to translate complex business requirements into effective technical solutions. My proficiency in technologies like AWS services,CI/CD,Jenkins,Docker,Terraform,Ansible,Linux,Python,SDLC,GIT,Github and MySQL. I am a quick learner, an excellent team player, and have 2+ experience working on projects involving AWS and DevOps Tools.
         </p>
-        <Link href="https://drive.google.com/file/d/12CTvIzTfuaUKIsbfQKjYl7PVN_IPcSJR/view?usp=sharing" target='_blank' download={true}>
+        <Link href="https://drive.google.com/file/d/1AmKKXgli1yHWxEsb59Nwfs9aIQCDSjVy/view?usp=sharing" target='_blank' download={true}>
           <div className='group flex items-center justify-center my-8 bg-blue-500
           text-white px-6 py-3 font-bold uppercase rounded-md tracking-wider transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 '>
             Resume
