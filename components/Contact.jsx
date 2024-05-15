@@ -53,7 +53,7 @@ const Contact = () => {
           <div className="w-full md:w-1/2 h-full rounded-xl p-4">
             <div className="p-4 text-left">
               <form
-                action="https://getform.io/f/cf455f06-3357-4011-aa7c-dd7df75cbd13"
+                action="https://getform.io/f/pbmqxwdb"
                 method="POST"
                 className="w-full"
               >
